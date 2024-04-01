@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Dashboard from "./scences/dashboard";
 import Layout from "./scences/layout";
+import Products from "./scences/Products";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -24,6 +25,7 @@ function App() {
             <Route element={<Layout />}>
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/products" element={<Products />} />
             </Route>
           </Routes>
         </ThemeProvider>
