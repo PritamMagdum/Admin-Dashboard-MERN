@@ -14,6 +14,7 @@ import Layout from "./scences/layout";
 import Products from "./scences/Products";
 import Customers from "./scences/customers";
 import Transactions from "./scences/transactions";
+import Geography from "./scences/geography";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -30,6 +31,7 @@ function App() {
               <Route path="/products" element={<Products />} />
               <Route path="/customers" element={<Customers />} />
               <Route path="/transactions" element={<Transactions />} />
+              <Route path="/geography" element={<Geography />} />
             </Route>
           </Routes>
         </ThemeProvider>
