@@ -19,6 +19,7 @@ import Overview from "./scences/overview";
 import Daily from "./scences/daily";
 import Monthly from "./scences/monthly";
 import Breakdown from "./scences/breakdown";
+import Admin from "./scences/admin";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -40,6 +41,7 @@ function App() {
               <Route path="/daily" element={<Daily />} />
               <Route path="/monthly" element={<Monthly />} />
               <Route path="/breakdown" element={<Breakdown />} />
+              <Route path="/admin" element={<Admin />} />
             </Route>
           </Routes>
         </ThemeProvider>
