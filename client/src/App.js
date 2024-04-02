@@ -17,6 +17,7 @@ import Transactions from "./scences/transactions";
 import Geography from "./scences/geography";
 import Overview from "./scences/overview";
 import Daily from "./scences/daily";
+import Monthly from "./scences/monthly";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -36,6 +37,7 @@ function App() {
               <Route path="/geography" element={<Geography />} />
               <Route path="/overview" element={<Overview />} />
               <Route path="/daily" element={<Daily />} />
+              <Route path="/monthly" element={<Monthly />} />
             </Route>
           </Routes>
         </ThemeProvider>
